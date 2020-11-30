@@ -1,0 +1,16 @@
+{
+  "id": "2239018",
+  "name": "vue3_vite_test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "一个vue3 + ts的项目搭建",
+  "glyphs": [
+    {
+      "icon_id": "12468736",
+      "name": "404",
+      "font_class": "icon-test",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}
