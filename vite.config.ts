@@ -1,7 +1,6 @@
 const path = require('path')
+const src_path = path.resolve(__dirname, './src')
 // vite.config.js # or vite.config.ts
-
-console.log(path.resolve(__dirname, './src'))
 
 module.exports = {
    /**
@@ -28,8 +27,17 @@ module.exports = {
   },
   alias: {
     // 键必须以斜线开始和结束
-    '/@/': path.resolve(__dirname, './src')
+    '/@/': src_path
     // '/@components/': path.resolve(__dirname, './src/components')
+  },
+  cssPreprocessOptions: {
+    less: {
+      modifyVars: {
+        // 'primary-color': '#1890ff',
+        // 'link-color': '#1DA57A'
+      },
+      javascriptEnabled: true
+    }
   },
   proxy: {
     // 如果是 /lsbdb 打头，则访问地址如下
