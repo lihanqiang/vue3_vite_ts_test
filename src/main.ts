@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import App from '/@/App.vue'
+import App from './App.vue'
 // ant-design-vue
-import antd_components, { message } from '/@/utils/antd'
+import antd_components, { message } from './utils/antd'
 import 'ant-design-vue/dist/antd.less'
 // 全局样式
 import './styles/index.less'
